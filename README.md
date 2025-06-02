@@ -25,9 +25,9 @@
 
 </p>
 <p align="center">
-  <a href='https://arxiv.org/abs/2505.XXXXX'>
-    <img src='https://img.shields.io/badge/Arxiv-2505.XXXXX-A42C25?style=flat&logo=arXiv&logoColor=A42C25'></a>
-  <a href='https://arxiv.org/pdf/2505.XXXXX.pdf'>
+  <a href='https://arxiv.org/abs/2505.24863'>
+    <img src='https://img.shields.io/badge/Arxiv-2505.24863-A42C25?style=flat&logo=arXiv&logoColor=A42C25'></a>
+  <a href='https://arxiv.org/pdf/2505.24863'>
     <img src='https://img.shields.io/badge/Paper-PDF-yellow?style=flat&logo=arXiv&logoColor=yellow'></a>
   <a href='https://alphaone-project.github.io/'>
     <img src='https://img.shields.io/badge/Project-Page-green?style=flat&logo=Google%20chrome&logoColor=green'></a>
@@ -37,7 +37,7 @@
 
 ## 🏠 About
 <div style="text-align: center;">
-    <img src="assets/framework.png" width=85% >
+    <img src="assets/framework_white.png" width=85% >
 </div>
 
 We present **AlphaOne (𝛼1)**, a universal framework for modulating reasoning progress in large reasoning models (LRMs) at test time. 𝛼1 first introduces 𝛼 moment, which represents the scaled thinking phase with a universal parameter 𝛼. Within this scaled pre-𝛼 moment phase, it dynamically schedules slow thinking transitions by modeling the insertion of reasoning transition tokens as a Bernoulli stochastic process. After the 𝛼 moment, 𝛼1 deterministically terminates slow thinking with the end-of-thinking token, thereby fostering fast reasoning and efficient answer generation. This approach unifies and generalizes existing monotonic scaling methods by enabling flexible and dense slow-to-fast reasoning modulation, while offering critical insights into the joint optimization of reasoning capabilities and computational efficiency.
@@ -54,7 +54,7 @@ If you find our work useful in your research, please consider citing AlphaOne:
 @article{AlphaOne25,
     title={AlphaOne: Reasoning Models Thinking Slow and Fast at Test Time},
     author={Zhang, Junyu and Dong, Runpei and Wang, Han and Ning, Xuying and Geng, Haoran and Li, Peihao and He, Xialin and Bai, Yutong and Malik, Jitendra and Gupta, Saurabh and Zhang, Huan},
-    journal={arXiv preprint arXiv:2505.XXXXX},
+    journal={arXiv preprint arXiv:2505.24863},
     year={2025}
 }
 ```
