@@ -15,7 +15,7 @@
     <a href='https://saurabhg.web.illinois.edu/' target='_blank'>Saurabh Gupta </a><sup><img src="assets/uiuc.svg" align="center" width=0.8% ></sup>&emsp;
     <a href='https://www.huan-zhang.com/' target='_blank'>Huan Zhang </a><sup><img src="assets/uiuc.svg" align="center" width=0.8% ></sup>&emsp;
     <br>
-    <sup><img src="assets/uiuc.svg" align="center" width=0.8% ></sup>University of Illinois Urbana-Champaign <sup>
+    <sup><img src="assets/uiuc.svg" align="center" width=0.8% ></sup> University of Illinois Urbana-Champaign <sup>
     &emsp;&emsp;<img src="assets/berkeley.svg" align="center" width=1.5% ></sup> UC Berkeley
     <br>
     <sup>&#8224;</sup>: Equal contribution
