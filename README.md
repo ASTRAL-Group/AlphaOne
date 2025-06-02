@@ -1,7 +1,7 @@
 <p align="center">
 <h1 align="center"><strong>AlphaOne: Reasoning Models Thinking Slow and Fast at Test Time</strong></h1>
   <p align="center">
-    <a href='https://runpeidong.web.illinois.edu/' target='_blank'>Junyu Zhang </a><sup><img src="assets/uiuc.svg" align="center" width=0.8% >&#8224;</sup>&emsp;
+    <a href='https://jyzhang1208.github.io/' target='_blank'>Junyu Zhang </a><sup><img src="assets/uiuc.svg" align="center" width=0.8% >&#8224;</sup>&emsp;
     <a href='https://runpeidong.web.illinois.edu/' target='_blank'>Runpei Dong </a><sup><img src="assets/uiuc.svg" align="center" width=0.8% >&#8224;</sup>&emsp;
     <a href='https://rookiehb.github.io/' target='_blank'>Han Wang </a><sup><img src="assets/uiuc.svg" align="center" width=0.8% ></sup>&emsp;
     <a href='https://scholar.google.com/citations?user=-tpUy14AAAAJ&hl=en' target='_blank'>Xuying Ning </a><sup><img src="assets/uiuc.svg" align="center" width=0.8% ></sup>&emsp;
