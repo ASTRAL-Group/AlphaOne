@@ -80,10 +80,14 @@ This makes it easier to monitor progress in real-time and keep track of multiple
 We provide evaluation scripts for evaluating 𝛼1 LRMs on math and science benchmarks, such as **AIME24**, **AMC23**, **Minerva-Math**, **MATH500** and **OlympiadBench**.
 
 To evaluate different models:
-- For **DeepSeek-R1-Distill-Qwen**:
+- For **DeepSeek-R1-Distill-Qwen-1.5B**:
 ```bash
 cd AlphaOne/eval
 ./scripts/alphaone/eval_linear_deepseek_1_5b.sh
+```
+- For **DeepSeek-R1-Distill-Qwen-7B**:
+```bash
+cd AlphaOne/eval
 ./scripts/alphaone/eval_linear_deepseek_7b.sh
 ```
 - For **Qwen QwQ-32B**:
@@ -98,36 +102,7 @@ For **LiveCodeBench**, which focuses on code generation and execution, use the f
 
 ### Baselines Evaluation
 
-- For **Base Model**:
-```bash
-# evaluate DeepSeek on Math & Science
-./scripts/base/eval_base_deepseek_1_5b.sh
-./scripts/base/eval_base_deepseek_7b.sh
-# evaluate QwQ on Math & Science
-./scripts/base/eval_base_qwq.sh
-# evaluate DeepSeek & QwQ on Coding
-./scripts/base/eval_base_code.sh
-```
-- For **s1**:
-```bash
-# evaluate DeepSeek on Math & Science
-./scripts/s1/eval_s1_deepseek_1_5b.sh
-./scripts/s1/eval_s1_deepseek_7b.sh
-# evaluate QwQ on Math & Science
-./scripts/s1/eval_s1_qwq.sh
-# evaluate DeepSeek & QwQ on Coding
-./scripts/s1/eval_s1_code.sh
-```
-- For **Chain of Draft**:
-```bash
-# evaluate DeepSeek on Math & Science
-./scripts/cod/eval_cod_deepseek_1_5b.sh
-./scripts/cod/eval_cod_deepseek_7b.sh
-# evaluate QwQ on Math & Science
-./scripts/cod/eval_cod_qwq.sh
-# evaluate DeepSeek & QwQ on Coding
-./scripts/cod/eval_cod_code.sh
-```
+Refer to [docs/BASELINE.md](docs/BASELINE.md) for detailed instructions to run the Baselines evaluations.
 
 ## Acknowledgment
 This repo builds on the excellent evaluation platforms [Qwen2.5-Math](https://github.com/QwenLM/Qwen2.5-Math/tree/main/evaluation) and [SEAL](https://github.com/VITA-Group/SEAL). Model deployment is powered by [vllm](https://github.com/vllm-project/vllm).
