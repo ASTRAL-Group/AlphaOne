@@ -17,7 +17,7 @@ We provide evaluation scripts for evaluating baselines on math and science bench
 ```bash
 ./scripts/base/eval_base_qwq.sh
 ```
-- For LiveCodeBench:
+- For **LiveCodeBench**:
 ```bash
 ./scripts/base/eval_base_code.sh
 ```
@@ -34,7 +34,7 @@ We provide evaluation scripts for evaluating baselines on math and science bench
 ```bash
 ./scripts/s1/eval_s1_qwq.sh
 ```
-- For LiveCodeBench:
+- For **LiveCodeBench**:
 ```bash
 ./scripts/s1/eval_s1_code.sh
 ```
@@ -52,7 +52,7 @@ We provide evaluation scripts for evaluating baselines on math and science bench
 ```bash
 ./scripts/cod/eval_cod_qwq.sh
 ```
-- For LiveCodeBench:
+- For **LiveCodeBench**:
 ```bash
 ./scripts/cod/eval_cod_code.sh
 ```

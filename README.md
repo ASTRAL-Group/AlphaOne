@@ -44,8 +44,6 @@ We present **AlphaOne (𝛼1)**, a universal framework for modulating reasoning 
 
 This approach unifies and generalizes existing monotonic scaling methods by enabling flexible and dense slow-to-fast reasoning modulation, while offering critical insights into the joint optimization of reasoning capabilities and computational efficiency.
 
-🚧 **Code release under construction — stay tuned!** 🚧
-
 ## 🛠️ Installation
 Follow these steps to set up the environment for AlphaOne. Our installation is adapted from [Qwen2.5-Math](https://github.com/QwenLM/Qwen2.5-Math/tree/main/evaluation).
 
@@ -102,7 +100,7 @@ For **LiveCodeBench**, which focuses on code generation and execution, use the f
 
 ### Baselines Evaluation
 
-Refer to [docs/BASELINE.md](docs/BASELINE.md) for detailed instructions to run the Baselines evaluations.
+Refer to [docs/BASELINE.md](docs/BASELINE.md) for detailed instructions to evaluate the baselines.
 
 ## Acknowledgment
 This repo builds on the excellent evaluation platforms [Qwen2.5-Math](https://github.com/QwenLM/Qwen2.5-Math/tree/main/evaluation) and [SEAL](https://github.com/VITA-Group/SEAL). Model deployment is powered by [vllm](https://github.com/vllm-project/vllm).
