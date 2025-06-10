@@ -37,12 +37,100 @@
 
 ## 🏠 About
 <div style="text-align: center;">
-    <img src="assets/framework_white.png" width=85% >
+    <img src="assets/framework_white.png" width=100% >
 </div>
 
-We present **AlphaOne (𝛼1)**, a universal framework for modulating reasoning progress in large reasoning models (LRMs) at test time. 𝛼1 first introduces 𝛼 moment, which represents the scaled thinking phase with a universal parameter 𝛼. Within this scaled pre-𝛼 moment phase, it dynamically schedules slow thinking transitions by modeling the insertion of reasoning transition tokens as a Bernoulli stochastic process. After the 𝛼 moment, 𝛼1 deterministically terminates slow thinking with the end-of-thinking token, thereby fostering fast reasoning and efficient answer generation. This approach unifies and generalizes existing monotonic scaling methods by enabling flexible and dense slow-to-fast reasoning modulation, while offering critical insights into the joint optimization of reasoning capabilities and computational efficiency.
+We present **AlphaOne (𝛼1)**, a universal framework for modulating reasoning progress in large reasoning models (LRMs) at test time. 𝛼1 first introduces 𝛼 moment, which represents the scaled thinking phase with a universal parameter 𝛼. Within this scaled pre-𝛼 moment phase, it dynamically schedules slow thinking transitions by modeling the insertion of reasoning transition tokens as a Bernoulli stochastic process. After the 𝛼 moment, 𝛼1 deterministically terminates slow thinking with the end-of-thinking token, thereby fostering fast reasoning and efficient answer generation. 
+
+This approach unifies and generalizes existing monotonic scaling methods by enabling flexible and dense slow-to-fast reasoning modulation, while offering critical insights into the joint optimization of reasoning capabilities and computational efficiency.
 
 🚧 **Code release under construction — stay tuned!** 🚧
+
+## 🛠️ Installation
+Follow these steps to set up the environment for AlphaOne. Our installation is adapted from [Qwen2.5-Math](https://github.com/QwenLM/Qwen2.5-Math/tree/main/evaluation).
+
+1. Create and activate the conda environment.
+
+```bash
+conda create -n alphaone python=3.10
+conda activate alphaone
+```
+
+2. Install the required dependencies.
+
+```bash
+cd eval/latex2sympy
+pip install -e .
+cd ..
+pip install -r requirements.txt 
+pip install vllm==0.5.1 --no-build-isolation
+pip install transformers==4.42.3
+```
+
+Now, launch your 𝛼1 LRMs and let the magic begin! 🚀
+
+## 🎯 Quick Start
+**Note: we recommend running evaluation scripts with output redirection**, for example,
+```bash
+nohup bash ./scripts/alphaone/eval_linear_deepseek_7b.sh >> deepseek-7b-alpha-1.4.log &
+```
+This makes it easier to monitor progress in real-time and keep track of multiple runs.
+
+### AlphaOne Evaluation
+We provide evaluation scripts for evaluating 𝛼1 LRMs on math and science benchmarks, such as **AIME24**, **AMC23**, **Minerva-Math**, **MATH500** and **OlympiadBench**.
+
+To evaluate different models:
+- For **DeepSeek-R1-Distill-Qwen**:
+```bash
+cd AlphaOne/eval
+./scripts/alphaone/eval_linear_deepseek_1_5b.sh
+./scripts/alphaone/eval_linear_deepseek_7b.sh
+```
+- For **Qwen QwQ-32B**:
+```bash
+cd AlphaOne/eval
+./scripts/alphaone/eval_linear_qwq.sh
+```
+For **LiveCodeBench**, which focuses on code generation and execution, use the following script:
+```bash
+./scripts/alphaone/eval_linear_code.sh
+```
+
+### Baselines Evaluation
+
+- For **Base Model**:
+```bash
+# evaluate DeepSeek on Math & Science
+./scripts/base/eval_base_deepseek_1_5b.sh
+./scripts/base/eval_base_deepseek_7b.sh
+# evaluate QwQ on Math & Science
+./scripts/base/eval_base_qwq.sh
+# evaluate DeepSeek & QwQ on Coding
+./scripts/base/eval_base_code.sh
+```
+- For **s1**:
+```bash
+# evaluate DeepSeek on Math & Science
+./scripts/s1/eval_s1_deepseek_1_5b.sh
+./scripts/s1/eval_s1_deepseek_7b.sh
+# evaluate QwQ on Math & Science
+./scripts/s1/eval_s1_qwq.sh
+# evaluate DeepSeek & QwQ on Coding
+./scripts/s1/eval_s1_code.sh
+```
+- For **Chain of Draft**:
+```bash
+# evaluate DeepSeek on Math & Science
+./scripts/cod/eval_cod_deepseek_1_5b.sh
+./scripts/cod/eval_cod_deepseek_7b.sh
+# evaluate QwQ on Math & Science
+./scripts/cod/eval_cod_qwq.sh
+# evaluate DeepSeek & QwQ on Coding
+./scripts/cod/eval_cod_code.sh
+```
+
+## Acknowledgment
+This repo builds on the excellent evaluation platforms [Qwen2.5-Math](https://github.com/QwenLM/Qwen2.5-Math/tree/main/evaluation) and [SEAL](https://github.com/VITA-Group/SEAL). Model deployment is powered by [vllm](https://github.com/vllm-project/vllm).
 
 ## Contact
 If you have any questions related to the code or the paper, feel free to email Junyu Zhang (`junyuz6@illinois.edu`) and Runpei Dong (`runpeid2@illinois.edu`).
